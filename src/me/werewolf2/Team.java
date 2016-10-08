@@ -5,6 +5,7 @@ public enum Team {
 	WEREWOLF,
 	VILLAGE,
 	TANNER,
-	TANNERPI;
+	TANNERPI,
+	LOSTMAYOR;
 
 }
