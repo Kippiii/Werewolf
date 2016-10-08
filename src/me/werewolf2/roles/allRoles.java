@@ -18,7 +18,8 @@ public enum allRoles {
 	HUNTER(10, "Hunter", "If you get voted out, the person who you voted for dies instead.", Team.VILLAGE),
 	MINION(11, "Minion", "You know who the werewolves are. Your job is to keep them alive at all costs. Also, if you die, you and the werewolves still win.", Team.WEREWOLF),
 	PRINCE(12, "Prince", "If you get voted out, the person with the second most votes dies instead.", Team.VILLAGE),
-	INSOMNIAC(13, "Insomniac", "They get to see what their role is at the end of the night period.", Team.VILLAGE);
+	ASSISTANT_TANNER(13, "Assistant Tanner", "You are told who the real tanner is. Get them lynched at all costs.", Team.TANNER),
+	INSOMNIAC(14, "Insomniac", "They get to see what their role is at the end of the night period.", Team.VILLAGE);
 	
 	
 	
@@ -26,7 +27,7 @@ public enum allRoles {
 	String name, description;
 	Team team;
 	
-	public static int number = 12;
+	public static int number = 14;
 	
 	allRoles(int rn, String n, String d, Team t) {
 		this.roleNumber = rn;
