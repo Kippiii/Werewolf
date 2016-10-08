@@ -57,6 +57,10 @@ public class Player {
 		this.votes ++;
 	}
 	
+	public void setVotes(int v) {
+		this.votes = v;
+	}
+	
 	public int getVotes() {
 		return this.votes;
 	}
