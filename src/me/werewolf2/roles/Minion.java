@@ -21,7 +21,8 @@ public class Minion extends Role {
 		}
 		
 		if(werewolves.size() == 0) {
-			p.sendMessage("There are no werewolves. :(");
+			p.sendMessage("There are no werewolves. :( You are now a werewolf.");
+			p.setRole(new Werewolf());
 		}else if(werewolves.size() == 1) {
 			Player w = werewolves.get(0);
 			p.sendMessage("The only werewolf in the game is " + w.getName() + ".");

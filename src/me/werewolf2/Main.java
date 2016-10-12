@@ -16,6 +16,8 @@ import com.samczsun.skype4j.exceptions.NotParticipatingException;
 import me.werewolf2.roles.Drunk;
 import me.werewolf2.roles.Hunter;
 import me.werewolf2.roles.Insomniac;
+import me.werewolf2.roles.Minion;
+import me.werewolf2.roles.PI;
 import me.werewolf2.roles.Robber;
 import me.werewolf2.roles.Role;
 import me.werewolf2.roles.Seer;
@@ -41,11 +43,12 @@ public class Main extends Applet implements Runnable {
 	public void init() {
 		//Add whatever roles you want.
 		roles.add(new Werewolf());
+		roles.add(new Minion());
 		roles.add(new Tanner());
 		roles.add(new Robber());
 		roles.add(new Troublemaker());
-		roles.add(new Werewolf());
-		roles.add(new Seer());
+		roles.add(new Hunter());
+		roles.add(new PI());
 		
 		this.resize(WIDTH, HEIGHT);
 		

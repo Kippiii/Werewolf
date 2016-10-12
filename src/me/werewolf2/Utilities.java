@@ -9,6 +9,7 @@ import me.werewolf2.roles.Role;
 import me.werewolf2.roles.Tanner;
 import me.werewolf2.roles.Werewolf;
 import me.werewolf2.roles.allRoles;
+import me.werewolf2.roles.Mayors.RevealedMayor;
 import me.werewolf2.roles.PIs.TannerPI;
 import me.werewolf2.roles.PIs.WerewolfPI;
 
@@ -101,7 +102,12 @@ public class Utilities {
 			Player p = Main.players.get(i);
 			if(p.getVote() != 0) {
 				Player r = Main.players.get(p.getVote() - 1);
-				r.addVote();
+				if(p.getRole() instanceof RevealedMayor) {
+					r.addVote();
+					r.addVote();
+				}else{
+					r.addVote();
+				}
 			}else{
 				p.sendMessage("You did not vote!");
 			}
